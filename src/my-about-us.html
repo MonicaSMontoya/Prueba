@@ -1,0 +1,51 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
+<link rel="import" href="../elements/app-effects/parallax-box.html">
+<link rel="import" href="../src/style-main.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+
+<dom-module id="my-about-us">
+  <style include="iron-flex iron-flex-alignment">
+    .contenedor-alternativo p,p {
+    padding-bottom:20px;
+    } 
+
+   </style>
+
+  <style include="main-styles"></style>
+
+  <template>
+
+    <app-box class="contenedor-presentacion page-about-us" effects="parallax-box">
+      <h1 class="titulo-principal">Descubre <span>quiénes somos</span></h1>
+      <p class="parrafo-destacado">Apasionados por la tecnología y por el desarrollo de aplicaciones funcionales y amigables.</p>
+    </app-box>
+
+    <div class="contenedor-alternativo">
+      <p>En Maravant, cada año elegimos a un número reducido de desarrolladoras front-end que están empezando su carrera en la industria digital para participar de un programa intensivo de formación digital y desarrollo del talento que potencie sus habilidades digitales.</p>
+      <p>Esta inversión contínua en formación tecnológica y la alta orientación al cliente son los valores que conforman nuestro ADN diferencial en Maravant.</p>
+    </div>
+
+    <div class="contenedor-alternativo">
+      <h2 class="titulo-secundario">Contamos contigo</h2>
+      <h1>Desarrolla <span>tu talento</span> con nosotros</h1>
+      <p>Buscamos mujeres proactivas que quieran transformar sus vidas y dedicarse al mundo digital. Aprenderás desde cero a programar y crear aplicaciones funcionales en un entorno ágil y positivo.</p>
+      <p>Contarás con la ayuda y la experiencia de distintos profesionales del sector.</p>
+      <a href="/contact-us" class="saber-mas">CONTÁCTANOS</a>
+    </div>  
+
+    <app-footer></app-footer>
+
+    </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'my-about-us'
+
+    });
+
+  </script>
+
+</dom-module>

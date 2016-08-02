@@ -1,0 +1,111 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
+<link rel="import" href="../elements/app-effects/parallax-box.html">
+<link rel="import" href="../src/style-main.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+<link rel="import" href="../elements/app-footer/app-footer.html">
+
+
+<dom-module id="my-services">
+<style include="iron-flex iron-flex-alignment"></style>
+  <style include="main-styles">
+    .contenedor-alternativo p,p {
+      padding-bottom:20px;
+    }
+
+    :host .type-company-pyme {
+      background: url(/images/ball-company-pyme.jpg);
+      background-size: cover;
+    }
+
+    :host .type-company-big {
+      background: url(/images/ball-company-big.jpg);
+      background-size: cover;
+    }
+
+    :host .type-company-startup {
+      background: url(/images/ball-company-startup.jpg);
+      background-size: cover;
+    }
+  </style>
+  <template>
+
+    <app-box class="contenedor-presentacion page-services" effects="parallax-box">
+      <h1 class="titulo-principal">Tu negocio en el bolsillo de <span>miles de personas</span></h1>
+      <p class="parrafo-destacado">Diseñamos y construimos aplicaciones móviles funcionales, interactivas, y orientadas al usuario.</p>
+    </app-box>
+
+    <div class="contenedor-alternativo">
+      <p>Nuestros desarrollos están marcados por nuestra calidad y experiencia. Creamos aplicaciones móviles y sitios web multidispositivos. Trabajamos con pasión cuando se trata de crear una buena experiencia de usuario.</p>
+      <p>Nos adaptamos a tus necesidades, lo que nos convierte en un socio estratégico y comprometido con tus objetivos.</p>
+    </div>
+
+    <div class="contenedor-alternativo">
+      <h1>Apps <span> que te hacen sonreir</span></h1>
+       <p>Porque sabemos que una buena experiencia de usuario impacta positivamente en tu negocio. Por eso enfocamos todos nuestros recursos en garantizar la mejor experiencia de usuario posible.</p>
+    </div>
+        
+    <div class="contenedor-alternativo">
+      <h2 class="titulo-secundario">TRABAJAMOS CON TODOS</h2>
+      <h1><span>Podemos ayudarte</span>, seas del tamaño que seas</h1>
+
+      <div class="contenedor-circulos layout horizontal">
+        <div class="flex circulo">
+          <div class="circulo-figura type-company-big"></div>
+          <h2>Empresas consolidadas</h2>
+          <p>Cuando los recursos internos están saturados, la experiencia es limitada,
+          o simplemente se necesita un punto de vista imparcial.</p>
+        </div>
+        <div class="flex circulo">
+          <div class="circulo-figura type-company-pyme"></div>
+          <h2>PYMES y autónomos</h2>
+          <p>Utilizamos nuestra experiencia para hacer más visible tu comercio o
+          desarrollar tu producto.</p>
+        </div>
+        <div class="flex circulo">       
+          <div class="circulo-figura type-company-startup"></div>
+          <h2>Startups</h2>
+          <p>Tú pones la idea, nosotros la tecnología. Somos el socio tecnológico
+          que toda Startup necesita.</p>
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+   <app-footer></app-footer>
+
+
+    
+
+    <!--
+    <div class="contenedor contenedor-6 layout horizontal">
+      <div class="flex contacto nombre">
+        <input type="text" placeholder="Nombre" class="nombre"></input>
+      </div>
+      <div class="flex contacto correo">
+        <input type="text" placeholder="Correo" class="correo-electronico"></input>
+      </div>   
+      <div class="flex contacto solicitud">
+        <div class="boton-contacto">SOLICITAR CONTACTO</div>
+      </div>   
+    </div>
+    -->
+
+
+  
+
+  
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'my-services'
+
+    });
+
+  </script>
+
+</dom-module>

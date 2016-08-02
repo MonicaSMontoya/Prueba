@@ -1,0 +1,90 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/app-layout/app-box/app-box.html">
+<link rel="import" href="../elements/app-effects/parallax-box.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../src/style-main.html">
+
+<dom-module id="my-home">
+  <style include="iron-flex iron-flex-alignment"></style>
+  <style include="main-styles"></style>
+
+  <style>
+    :host .type-service-mobile {
+      background: url(/images/ball-service-mobile.jpg);
+      background-size: cover;
+    }
+
+    :host .type-service-design {
+      background: url(/images/ball-service-design.jpg);
+      background-size: cover;
+    }
+
+    :host .type-service-consulting {
+      background: url(/images/ball-service-consulting.png);
+      background-size: cover;
+    }
+  </style>
+
+  <template>
+
+    <app-box class="contenedor-presentacion" effects="parallax-box">
+      <h1 class="titulo-principal">Tú lo imaginas, nosotros lo hacemos <span> realidad</span></h1>
+      <p class="parrafo-destacado">Creamos interfaces, aplicaciones móviles y sitios web de alta calidad.</p>
+    </app-box>
+
+    <div class="contenedor-alternativo">
+      <h2 class="titulo-secundario">¿QUIENES SOMOS?</h2>
+      <p>Somos <strong>el socio tecnológico</strong> que tu empresa necesita. Contamos con tecnología
+      propia de última generación al servicio del desarrollo de aplicaciones móviles y webs.</p>
+    </div>
+
+    <div class="contenedor-alternativo">
+      <h2 class="titulo-secundario">¿PORQUÉ ELEGIRNOS?</h2>
+      <h1><span>Especialistas </span> en desarrollo de aplicaciones móviles</h1>
+      <p>Con metodologías únicas y técnicas de última generación en desarrollo de aplicaciones
+      híbridas. Nos obsesionamos por <strong>la calidad de nuestros trabajos</strong> entregados.</p>
+      <a href="/services" class="saber-mas">SABER MÁS</a>
+    </div>
+
+    <div class="contenedor-alternativo">
+      <h2 class="titulo-secundario">¿QUÉ HACEMOS?</h2>
+      <h1>Para nosotros, <span>el móvil primero</span></h1>
+
+      <div class="contenedor-circulos layout horizontal">
+        <div class="flex circulo">
+          <div class="circulo-figura type-service-mobile"></div>
+          <h2>DESARROLLO</h2>
+          <p>Nos encargamos de la <strong>producción completa</strong> de tus productos digitales. ¡Déjalo en nuestras manos!</p>
+        </div>
+
+        <div class="flex circulo">
+          <div class="circulo-figura type-service-design"></div>
+          <h2>DISEÑO</h2>
+          <p>Diseñamos pensando en la <strong>funcionalidad y usabilidad</strong>, buscando un diseño atractivo y diferencial que garantice su éxito.</p>
+        </div>
+
+        <div class="flex circulo">       
+          <div class="circulo-figura type-service-consulting"></div>
+          <h2>CONSULTORÍA</h2>
+          <p>Definimos la <strong>estrategia mobile</strong> de tu proyecto. Hacemos realidad tu idea de una forma íntegra desde el inicio.</p>
+        </div>
+      </div>
+
+      <a href="/services" class="saber-mas">SABER MÁS</a>
+    </div>
+
+   <app-footer></app-footer>
+
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'my-home'
+
+    });
+
+  </script>
+
+</dom-module>

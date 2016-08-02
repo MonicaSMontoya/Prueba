@@ -1,0 +1,23 @@
+{
+	"hosting": {
+		"public": "build/bundled",
+		"ignore": [
+			".gitignore",
+			"bower_components/**/test/**/*",
+			"bower_components/**/demo/**/*",
+			"test/**/*",
+			"LICENSE",
+			"bower.json",
+			"firebase.json",
+			"polymer.json",
+			"*.md",
+			"sw-precache-config.js"
+		],
+		"rewrites": [
+			{
+			"source": "**",
+			"destination": "/index.html"
+			}
+		]
+	}
+}
